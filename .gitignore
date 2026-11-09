@@ -41,3 +41,6 @@ test_*.png
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 一次性补丁脚本
+patch_*.py
