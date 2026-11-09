@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GGUF 解剖台 · 模型知识库与架构可视化</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">GGUF 解剖台 <span class="sep">/</span> <span id="model-name">加载中…</span></div>
+  <div class="meta-line" id="model-meta"></div>
+</header>
+
+<div class="kpis" id="kpis"></div>
+
+<nav class="tabs" id="tabs">
+  <button data-view="overview" class="active">概览</button>
+  <button data-view="arch">模型架构</button>
+  <button data-view="vocab">语言知识库</button>
+  <button data-view="kb3d">三维知识体系</button>
+  <button data-view="embed">向量空间</button>
+  <button data-view="meta">元数据 / 张量</button>
+</nav>
+
+<main id="main">
+  <section class="view active" id="view-overview"></section>
+  <section class="view" id="view-arch"></section>
+  <section class="view" id="view-vocab"></section>
+  <section class="view" id="view-kb3d"></section>
+  <section class="view" id="view-embed"></section>
+  <section class="view" id="view-meta"></section>
+</main>
+
+<footer class="foot">
+  <span id="gen-info"></span>
+  <span class="dim">数据来源：本地 GGUF 文件解析（build_web_data.py 生成）</span>
+</footer>
+
+<script src="data/model.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
