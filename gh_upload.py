@@ -111,7 +111,7 @@ def run_git(args, cwd=ROOT):
 
 
 def main():
-    repo = 'gguf-anatomy'
+    repo = 'GGUF-JiePouTai'
     token = None
     args = sys.argv[1:]
     for i, a in enumerate(args):

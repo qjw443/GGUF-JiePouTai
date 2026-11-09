@@ -1,4 +1,4 @@
-﻿#Requires -Version 5.1
+﻿﻿#Requires -Version 5.1
 <#
   把本项目推送到 GitHub 公开仓库。
 
@@ -20,7 +20,7 @@
     -Remote      已有远程地址时直接用这个，不新建仓库
 #>
 param(
-    [string]$Repo = 'gguf-anatomy',
+    [string]$Repo = 'GGUF-JiePouTai',
     [string]$Owner = '',
     [string]$Token = $env:GITHUB_TOKEN,
     [string]$Description = 'GGUF anatomy workbench: 3D model chain, Chinese vocabulary KB, refusal-direction removal',
